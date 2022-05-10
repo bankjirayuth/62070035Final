@@ -6,9 +6,17 @@ services:
     restart: always
     ports:
       - 3001:80
+
   backend:
     image: 62070035/devtool-backend-final:1.0.0
     build: ./back-end
     restart: always
     ports:
       - 4000:4000
+      - 9464:9464
+  prometheus:
+    image: prometheus-final
+    build: ./prometheus
+    container_name: prom
+    ports:
+      - 9090:9090

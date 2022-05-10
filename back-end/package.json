@@ -11,6 +11,14 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.18.1",
-    "mongoose": "^6.3.3"
+    "mongoose": "^6.3.3",
+    "@opentelemetry/api": "^1.0.4",
+    "@opentelemetry/auto-instrumentations-node": "^0.28.0",
+    "@opentelemetry/exporter-prometheus": "^0.27.0",
+    "@opentelemetry/exporter-zipkin": "^1.0.1",
+    "@opentelemetry/instrumentation-express": "^0.28.0",
+    "@opentelemetry/instrumentation-http": "^0.27.0",
+    "@opentelemetry/sdk-metrics-base": "^0.27.0",
+    "@opentelemetry/sdk-node": "^0.27.0"
   }
 }
