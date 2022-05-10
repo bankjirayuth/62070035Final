@@ -1,0 +1,14 @@
+version: '3'
+services:
+  frontend:
+    image: 62070035/devtool-frontend-final:1.0.0
+    build: ./front-end
+    restart: always
+    ports:
+      - 3001:80
+  backend:
+    image: 62070035/devtool-backend-final:1.0.0
+    build: ./back-end
+    restart: always
+    ports:
+      - 4000:4000
